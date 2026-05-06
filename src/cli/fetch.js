@@ -1,3 +1,22 @@
+import 'dotenv/config';
 import { fetchEarningsWindow } from '../fetch/earnings.js';
+import { fetchCNEarnings, fetchHKEarnings } from '../fetch/earnings-cn.js';
 
+// 1. Fetch US earnings (Nasdaq)
 await fetchEarningsWindow();
+
+// 2. Fetch CN (A-share) earnings from cninfo.com.cn
+const cnStocks = (process.env.CN_STOCKS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+if (cnStocks.length > 0) {
+  await fetchCNEarnings(cnStocks);
+} else {
+  console.log('[fetch] CN_STOCKS not set — skipping A-share earnings');
+}
+
+// 3. Fetch HK earnings from data/hk-earnings.json
+const hkStocks = (process.env.HK_STOCKS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+if (hkStocks.length > 0) {
+  await fetchHKEarnings(hkStocks);
+} else {
+  console.log('[fetch] HK_STOCKS not set — skipping HK earnings');
+}

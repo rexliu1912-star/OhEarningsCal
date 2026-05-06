@@ -15,9 +15,16 @@ async function loadIndex(slug) {
 }
 
 async function buildCustomWatchlist(allIndexRows) {
-  if (env.customStocks.length === 0) return null;
   const lookup = new Map(allIndexRows.map((r) => [r.symbol.toUpperCase(), r]));
-  return env.customStocks.map((sym) => {
+  const combined = [
+    ...env.customStocks,
+    ...env.cnStocks,
+    ...env.hkStocks,
+  ];
+
+  if (combined.length === 0) return null;
+
+  return combined.map((sym) => {
     const hit = lookup.get(sym);
     return hit ?? { symbol: sym, companyName: sym, industry: '' };
   });
@@ -38,15 +45,27 @@ async function main() {
     await genForList(meta.slug, meta.label, rows);
   }
 
-  // 2. Custom watchlist (driven by CUSTOM_STOCKS env var).
+  // 2. Custom watchlist (US + CN + HK stocks from env vars).
   const customWatchlist = await buildCustomWatchlist(allIndexRows);
   if (customWatchlist) {
     await genForList(CUSTOM_SLUG, 'Custom Watchlist', customWatchlist);
   } else {
-    console.log('[gen] CUSTOM_STOCKS not set — skipping customstock.ics');
+    console.log('[gen] no CUSTOM_STOCKS/CN_STOCKS/HK_STOCKS — skipping customstock.ics');
   }
 
-  // 3. selected = union of all indices + custom (de-dup by symbol).
+  // 3. CN-only ics
+  if (env.cnStocks.length > 0) {
+    const cnWatchlist = env.cnStocks.map((sym) => ({ symbol: sym, companyName: sym, industry: '' }));
+    await genForList('cn', 'A-Share', cnWatchlist);
+  }
+
+  // 4. HK-only ics
+  if (env.hkStocks.length > 0) {
+    const hkWatchlist = env.hkStocks.map((sym) => ({ symbol: sym, companyName: sym, industry: '' }));
+    await genForList('hk', 'HK Stock', hkWatchlist);
+  }
+
+  // 5. selected = union of all indices + custom (de-dup by symbol).
   if (env.shouldGenSelected) {
     const seen = new Set();
     const selected = [];
@@ -59,9 +78,7 @@ async function main() {
     await genForList(SELECTED_SLUG, 'Selected (Indices + Custom)', selected);
   }
 
-  // 4. all + market-cap tiers — both derived from the unfiltered full set.
-  //    Always compute the full set so tiers can be generated regardless of
-  //    SHOULD_GEN_ALL; only the all.ics write is gated on the flag.
+  // 6. all + market-cap tiers — both derived from the unfiltered full set.
   const allEvents = await processEarnings({ watchlist: null });
   if (env.shouldGenAll) {
     await writeIcsFile({ slug: ALL_SLUG, label: 'All Earnings', events: allEvents });

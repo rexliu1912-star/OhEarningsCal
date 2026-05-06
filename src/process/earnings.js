@@ -21,7 +21,9 @@ function toEvent(row, dateISO, watchlistEntry) {
     time: normalizeTime(row.time),
     epsForecast: row.epsForecast || '',
     noOfEsts: row.noOfEsts || '',
-    companyName: watchlistEntry?.companyName || row.name || row.symbol,
+    companyName: watchlistEntry?.companyName && watchlistEntry.companyName !== watchlistEntry.symbol
+      ? watchlistEntry.companyName
+      : row.companyName || row.name || row.symbol,
     industry: watchlistEntry?.industry || '',
   };
 }

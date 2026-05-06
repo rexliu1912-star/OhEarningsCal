@@ -10,6 +10,7 @@ on:
       - 'src/**'
       - 'docs/**'
       - 'data/indices/**'
+      - 'data/hk-earnings.json'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/earnings.yml'
@@ -52,6 +53,8 @@ jobs:
         env:
           SHOULD_GEN_SELECTED: ${{ vars.SHOULD_GEN_SELECTED }}
           SHOULD_GEN_ALL: ${{ vars.SHOULD_GEN_ALL }}
+          CN_STOCKS: ${{ vars.CN_STOCKS }}
+          HK_STOCKS: ${{ vars.HK_STOCKS }}
 
       - name: Generate ics files
         run: npm run gen
@@ -59,6 +62,8 @@ jobs:
           SHOULD_GEN_SELECTED: ${{ vars.SHOULD_GEN_SELECTED }}
           SHOULD_GEN_ALL: ${{ vars.SHOULD_GEN_ALL }}
           CUSTOM_STOCKS: ${{ vars.CUSTOM_STOCKS }}
+          CN_STOCKS: ${{ vars.CN_STOCKS }}
+          HK_STOCKS: ${{ vars.HK_STOCKS }}
 
       - uses: actions/configure-pages@v6
 

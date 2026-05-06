@@ -17,5 +17,7 @@ export const env = {
   shouldGenSelected: bool(process.env.SHOULD_GEN_SELECTED, true),
   shouldGenAll: bool(process.env.SHOULD_GEN_ALL, true),
   customStocks: parseTickers(process.env.CUSTOM_STOCKS),
+  cnStocks: parseTickers(process.env.CN_STOCKS),
+  hkStocks: parseTickers(process.env.HK_STOCKS),
   port: Number(process.env.PORT ?? 18302),
 };
