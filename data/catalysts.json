@@ -1,0 +1,146 @@
+[
+  {
+    "symbol": "600900",
+    "date": "2025-01-01",
+    "precision": "year",
+    "title": "分红方案落地",
+    "description": "",
+    "source": "research"
+  },
+  {
+    "symbol": "003816",
+    "date": "2026-01-01",
+    "precision": "half",
+    "title": "惠州 1/太平岭 1/三澳 1 号投产",
+    "description": "新机组兑现。",
+    "source": "research"
+  },
+  {
+    "symbol": "CEG",
+    "date": "2026-04-01",
+    "precision": "quarter",
+    "title": "NRC 对 TMI-1 operating license 的听证与颁发",
+    "description": "",
+    "source": "research"
+  },
+  {
+    "symbol": "CEG",
+    "date": "2026-04-01",
+    "precision": "quarter",
+    "title": "TLN-AWS Susquehanna 从 behind → front of meter 正式转换",
+    "description": "",
+    "source": "research"
+  },
+  {
+    "symbol": "600089",
+    "date": "2026-04-16",
+    "precision": "day",
+    "title": "年报披露",
+    "description": "Q4 业绩和多晶硅减值情况是决定性信号。",
+    "source": "research"
+  },
+  {
+    "symbol": "CEG",
+    "date": "2026-04-17",
+    "precision": "day",
+    "title": "FERC BTMG 答复截止",
+    "description": "数据中心合同模式。",
+    "source": "research"
+  },
+  {
+    "symbol": "LNG",
+    "date": "2026-04-25",
+    "precision": "day",
+    "title": "欧盟禁俄 LNG 短期合同生效",
+    "description": "Q2 欧洲 LNG 抢货 + TTF 冲高。",
+    "source": "research"
+  },
+  {
+    "symbol": "003816",
+    "date": "2026-04-29",
+    "precision": "day",
+    "title": "Q1 正式财报",
+    "description": "验证发电量-业绩线性关系。",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2026-04-30",
+    "precision": "day",
+    "title": "Q2 FY26 财报",
+    "description": "核心分水岭;一致预期营收 +13-16%,实际若高于 +16% 或 Q3 指引上调,PE 重估空间 +5-10%;",
+    "source": "research"
+  },
+  {
+    "symbol": "CEG",
+    "date": "2026-05-11",
+    "precision": "day",
+    "title": "Q1 2026 财报",
+    "description": "$12 的 Q1 进度。",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2026-05-15",
+    "precision": "day",
+    "title": "Berkshire Q1 2026 13F",
+    "description": "是否继续减持是估值锚(已连续 6 季度减);",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2026-06-01",
+    "precision": "month",
+    "title": "WWDC",
+    "description": "Apple Foundation Model 3.0 / Siri 2.0 正式发布 / Vision Pro 2(<$2000)发布;",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2026-07-01",
+    "precision": "half",
+    "title": "iPhone 18 / iPhone Fold",
+    "description": "传闻首款折叠屏 iPhone,但若延至 2027 则失去催化;",
+    "source": "research"
+  },
+  {
+    "symbol": "CEG",
+    "date": "2026-07-01",
+    "precision": "half",
+    "title": "新 hyperscaler PPA 签约",
+    "description": "",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2026-09-01",
+    "precision": "month",
+    "title": "iOS 27",
+    "description": "AI Siri 个人语境首次实装;",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2026-12-01",
+    "precision": "month",
+    "title": "DOJ-Google 独家条款终止",
+    "description": "Apple-Google $20B 搜索费重新招标,关键分水岭;",
+    "source": "research"
+  },
+  {
+    "symbol": "AAPL",
+    "date": "2027-01-01",
+    "precision": "year",
+    "title": "DOJ vs Apple 反垄断开庭",
+    "description": "",
+    "source": "research"
+  },
+  {
+    "symbol": "CEG",
+    "date": "2027-06-01",
+    "precision": "month",
+    "title": "Clinton 供电 Meta 正式开始",
+    "description": "",
+    "source": "research"
+  }
+]

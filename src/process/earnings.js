@@ -25,6 +25,7 @@ function toEvent(row, dateISO, watchlistEntry) {
       ? watchlistEntry.companyName
       : row.companyName || row.name || row.symbol,
     industry: watchlistEntry?.industry || '',
+    market: row.market || 'us',
   };
 }
 
@@ -63,8 +64,8 @@ export async function processEarnings({
     }
   }
 
-  // Dedup by symbol — keeps the latest occurrence (Map overwrites on duplicate keys).
-  const dedup = Array.from(new Map(events.map((e) => [e.symbol, e])).values());
+  // Dedup by symbol+market — allows both earnings and catalyst events for the same symbol.
+  const dedup = Array.from(new Map(events.map((e) => [`${e.symbol}-${e.market || 'us'}`, e])).values());
   dedup.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
   return dedup;
 }
