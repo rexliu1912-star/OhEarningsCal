@@ -202,7 +202,7 @@
   {
     "symbol": "APP",
     "companyName": "AppLovin",
-    "industry": "Application Software"
+    "industry": "Advertising"
   },
   {
     "symbol": "APTV",
@@ -263,11 +263,6 @@
     "symbol": "AZO",
     "companyName": "AutoZone",
     "industry": "Automotive Retail"
-  },
-  {
-    "symbol": "AVB",
-    "companyName": "AvalonBay Communities",
-    "industry": "Multi-Family Residential REITs"
   },
   {
     "symbol": "AVY",
@@ -340,7 +335,7 @@
     "industry": "Transaction & Payment Processing Services"
   },
   {
-    "symbol": "BK",
+    "symbol": "BNY",
     "companyName": "BNY Mellon",
     "industry": "Asset Management & Custody Banks"
   },
@@ -415,11 +410,6 @@
     "industry": "Multi-Family Residential REITs"
   },
   {
-    "symbol": "CPB",
-    "companyName": "Campbell's Company (The)",
-    "industry": "Packaged Foods & Meats"
-  },
-  {
     "symbol": "COF",
     "companyName": "Capital One",
     "industry": "Consumer Finance"
@@ -431,7 +421,7 @@
   },
   {
     "symbol": "CCL",
-    "companyName": "Carnival",
+    "companyName": "Carnival Corporation",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
   {
@@ -610,11 +600,6 @@
     "industry": "Construction & Engineering"
   },
   {
-    "symbol": "CAG",
-    "companyName": "Conagra Brands",
-    "industry": "Packaged Foods & Meats"
-  },
-  {
     "symbol": "COP",
     "companyName": "ConocoPhillips",
     "industry": "Oil & Gas Exploration & Production"
@@ -668,11 +653,6 @@
     "symbol": "COST",
     "companyName": "Costco",
     "industry": "Consumer Staples Merchandise Retail"
-  },
-  {
-    "symbol": "CTRA",
-    "companyName": "Coterra",
-    "industry": "Oil & Gas Exploration & Production"
   },
   {
     "symbol": "CRH",
@@ -817,7 +797,7 @@
   {
     "symbol": "DD",
     "companyName": "DuPont",
-    "industry": "Specialty Chemicals"
+    "industry": "Industrial Conglomerates"
   },
   {
     "symbol": "ETN",
@@ -830,7 +810,7 @@
     "industry": "Broadline Retail"
   },
   {
-    "symbol": "SATS",
+    "symbol": "ECHO",
     "companyName": "EchoStar",
     "industry": "Wireless Telecommunication Services"
   },
@@ -848,11 +828,6 @@
     "symbol": "EW",
     "companyName": "Edwards Lifesciences",
     "industry": "Health Care Equipment"
-  },
-  {
-    "symbol": "EA",
-    "companyName": "Electronic Arts",
-    "industry": "Interactive Home Entertainment"
   },
   {
     "symbol": "ELV",
@@ -880,11 +855,6 @@
     "industry": "Oil & Gas Exploration & Production"
   },
   {
-    "symbol": "EPAM",
-    "companyName": "EPAM Systems",
-    "industry": "IT Consulting & Other Services"
-  },
-  {
     "symbol": "EQT",
     "companyName": "EQT Corporation",
     "industry": "Oil & Gas Exploration & Production"
@@ -898,11 +868,6 @@
     "symbol": "EQIX",
     "companyName": "Equinix",
     "industry": "Data Center REITs"
-  },
-  {
-    "symbol": "EQR",
-    "companyName": "Equity Residential",
-    "industry": "Multi-Family Residential REITs"
   },
   {
     "symbol": "ERIE",
@@ -995,6 +960,16 @@
     "industry": "Air Freight & Logistics"
   },
   {
+    "symbol": "FDXF",
+    "companyName": "FedEx Freight",
+    "industry": "Cargo Ground Transportation"
+  },
+  {
+    "symbol": "FERG",
+    "companyName": "Ferguson Enterprises",
+    "industry": "Building Products"
+  },
+  {
     "symbol": "FIS",
     "companyName": "Fidelity National Information Services",
     "industry": "Transaction & Payment Processing Services"
@@ -1018,6 +993,11 @@
     "symbol": "FISV",
     "companyName": "Fiserv",
     "industry": "Transaction & Payment Processing Services"
+  },
+  {
+    "symbol": "FLEX",
+    "companyName": "Flex Ltd.",
+    "industry": "Electronic Manufacturing Services"
   },
   {
     "symbol": "F",
@@ -1087,7 +1067,7 @@
   {
     "symbol": "GNRC",
     "companyName": "Generac",
-    "industry": "Electrical Components & Equipment"
+    "industry": "Heavy Electrical Equipment"
   },
   {
     "symbol": "GD",
@@ -1185,8 +1165,13 @@
     "industry": "Home Improvement Retail"
   },
   {
+    "symbol": "HONA",
+    "companyName": "Honeywell Aerospace",
+    "industry": "Aerospace & Defense"
+  },
+  {
     "symbol": "HON",
-    "companyName": "Honeywell",
+    "companyName": "Honeywell Technologies",
     "industry": "Industrial Conglomerates"
   },
   {
@@ -1515,6 +1500,11 @@
     "industry": "Construction Materials"
   },
   {
+    "symbol": "MRVL",
+    "companyName": "Marvell Technology",
+    "industry": "Semiconductors"
+  },
+  {
     "symbol": "MAS",
     "companyName": "Masco",
     "industry": "Building Products"
@@ -1636,7 +1626,7 @@
   },
   {
     "symbol": "MSCI",
-    "companyName": "MSCI Inc.",
+    "companyName": "MSCI",
     "industry": "Financial Exchanges & Data"
   },
   {
@@ -1736,7 +1726,7 @@
   },
   {
     "symbol": "ORLY",
-    "companyName": "O’Reilly Automotive",
+    "companyName": "O'Reilly Automotive",
     "industry": "Automotive Retail"
   },
   {
@@ -1855,11 +1845,6 @@
     "industry": "Diversified Banks"
   },
   {
-    "symbol": "POOL",
-    "companyName": "Pool Corporation",
-    "industry": "Distributors"
-  },
-  {
     "symbol": "PPG",
     "companyName": "PPG Industries",
     "industry": "Specialty Chemicals"
@@ -1945,6 +1930,11 @@
     "industry": "Investment Banking & Brokerage"
   },
   {
+    "symbol": "RDDT",
+    "companyName": "Reddit",
+    "industry": "Interactive Media & Services"
+  },
+  {
     "symbol": "RTX",
     "companyName": "RTX Corporation",
     "industry": "Aerospace & Defense"
@@ -1976,7 +1966,7 @@
   },
   {
     "symbol": "RMD",
-    "companyName": "ResMed",
+    "companyName": "ResMed|",
     "industry": "Health Care Equipment"
   },
   {
@@ -2330,6 +2320,11 @@
     "industry": "Oil & Gas Refining & Marketing"
   },
   {
+    "symbol": "VEEV",
+    "companyName": "Veeva Systems",
+    "industry": "Health Care Technology"
+  },
+  {
     "symbol": "VTR",
     "companyName": "Ventas",
     "industry": "Health Care REITs"
@@ -2383,6 +2378,11 @@
     "symbol": "VST",
     "companyName": "Vistra Corp.",
     "industry": "Electric Utilities"
+  },
+  {
+    "symbol": "VMRK",
+    "companyName": "Vivmark Residential",
+    "industry": "Multi-Family Residential REITs"
   },
   {
     "symbol": "VMC",
